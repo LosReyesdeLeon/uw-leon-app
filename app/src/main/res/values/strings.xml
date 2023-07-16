@@ -1,6 +1,39 @@
 <resources>
-    <string name="app_name">UW Leon App</string>
+    <string name="app_name">UW León App</string>
+
+    <!-- Home page strings -->
     <string name="home_page_greeting">Welcome to UW León Center!</string>
     <string name="navigation_button_text">Navigation</string>
     <string name="about_leon_button_text">About León</string>
+
+
+    <!-- Navigation page strings -->
+
+    <!-- Headings -->
+    <string name="school_addresses">School Addresses:</string>
+    <string name="landmark_addresses">Landmark Addresses:</string>
+
+    <!-- Buttons -->
+    <string name="add_host_address">Add your host family\'s address</string>
+    <string name="add_other_address">Add another address</string>
+
+    <!-- Places -->
+    <string name="palacio">Palacio de Conde Luna (Conde Luna Palace)/UW Center</string>
+    <string name="centro_de_idiomas">Centro de Idiomas (Language Center)</string>
+    <string name="universidad_de_leon">Universidad de León (University of León)</string>
+    <string name="catedral">La Catedral de Santa Maria (Saint Mary\'s Cathedral)</string>
+    <string name="casa_botines">Casa Botines (Botines House)</string>
+    <string name="basilica_de_san_isidoro">Basílica de San Isidoro (San Isidoro\'s Basilica)</string>
+
+
+
+    <!-- Addresses -->
+    <string name="palacio_address">Plaza Conde Luna, 24003 León, Spain</string>
+    <string name="centro_de_idiomas_address">Universidad de León, Edificio Centro de idiomas de la, Pl. Jardin de San Francisco, 24004 León, Spain</string>
+    <string name="universidad_de_leon_address">Av. Facultad de Veterinaria, 25, 24004 León, Spain</string>
+    <string name="catedral_address">Pl. de Regla, s/n, 24003 León, Spain</string>
+    <string name="casa_botines_address">Pl. de S. Marcelo, 5, 24002 León, Spain</string>
+    <string name="basilica_de_san_isidoro_address">Plaza San Isidoro, 4, 24003 León, Spain</string>
+
+
 </resources>
