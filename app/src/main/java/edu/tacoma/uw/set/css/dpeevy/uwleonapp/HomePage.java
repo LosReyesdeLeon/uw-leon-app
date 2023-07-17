@@ -9,6 +9,8 @@ import android.widget.Button;
 
 public class HomePage extends AppCompatActivity {
 
+    private String waste;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
