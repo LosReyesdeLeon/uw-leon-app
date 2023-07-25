@@ -132,12 +132,4 @@
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="527dp" />
 
-    <Button
-        android:id="@+id/submitTes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="650dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
