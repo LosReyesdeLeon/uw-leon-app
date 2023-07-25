@@ -23,6 +23,7 @@
         android:text="@string/about_leon_button_text"
         app:layout_constraintBottom_toTopOf="@id/navigation_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/greeting" />
 
@@ -33,7 +34,17 @@
         android:text="@string/navigation_button_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/about_button" />
+
+    <Button
+        android:id="@+id/testominal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Testominal"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="631dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
