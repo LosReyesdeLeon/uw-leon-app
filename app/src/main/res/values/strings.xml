@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">UW León App</string>
 
     <!-- Home page strings -->
@@ -34,6 +35,5 @@
     <string name="catedral_address">Pl. de Regla, s/n, 24003 León, Spain</string>
     <string name="casa_botines_address">Pl. de S. Marcelo, 5, 24002 León, Spain</string>
     <string name="basilica_de_san_isidoro_address">Plaza San Isidoro, 4, 24003 León, Spain</string>
-
 
 </resources>
