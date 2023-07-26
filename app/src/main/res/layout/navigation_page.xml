@@ -4,6 +4,203 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@color/uw_gold"
     tools:context=".NavigationPage">
+
+
+    <TextView
+        android:id="@+id/school_addresses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/school_addresses"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/uw_purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/palacio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/palacio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/palacio"
+        android:textAlignment="center"
+        android:textColor="@color/uw_purple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/palacio_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/school_addresses" />
+
+    <TextView
+        android:id="@+id/palacio_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:paddingTop="0dp"
+        android:text="@string/palacio_address"
+        android:textAlignment="center"
+        android:textColor="@color/uw_purple"
+        app:layout_constraintBottom_toTopOf="@id/universidad_de_leon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/palacio" />
+
+    <TextView
+        android:id="@+id/universidad_de_leon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/universidad_de_leon"
+        android:textAlignment="center"
+        android:textColor="@color/uw_purple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/universidad_de_leon_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/palacio_address" />
+
+    <TextView
+        android:id="@+id/universidad_de_leon_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/universidad_de_leon_address"
+        android:textColor="@color/uw_purple"
+        app:layout_constraintBottom_toTopOf="@id/centro_de_idiomas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/universidad_de_leon" />
+
+    <TextView
+        android:id="@+id/centro_de_idiomas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/centro_de_idiomas"
+        android:textColor="@color/uw_purple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/centro_de_idiomas_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/universidad_de_leon_address" />
+
+    <TextView
+        android:id="@+id/centro_de_idiomas_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/centro_de_idiomas_address"
+        android:textColor="@color/uw_purple"
+        app:layout_constraintBottom_toTopOf="@id/landmark_addresses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/centro_de_idiomas" />
+
+    <TextView
+        android:id="@+id/landmark_addresses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/landmark_addresses"
+        android:textAllCaps="true"
+        android:textColor="@color/uw_purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/catedral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/centro_de_idiomas_address" />
+
+    <TextView
+        android:id="@+id/catedral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/catedral"
+        android:textColor="@color/uw_purple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/catedral_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/landmark_addresses" />
+
+    <TextView
+        android:id="@+id/catedral_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/catedral_address"
+        android:textColor="@color/uw_purple"
+        app:layout_constraintBottom_toTopOf="@id/basilica_de_san_isidoro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/catedral" />
+
+    <TextView
+        android:id="@+id/basilica_de_san_isidoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/basilica_de_san_isidoro"
+        android:textColor="@color/uw_purple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/basilica_de_san_isidoro_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/catedral_address" />
+
+    <TextView
+        android:id="@+id/basilica_de_san_isidoro_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/basilica_de_san_isidoro_address"
+        android:textColor="@color/uw_purple"
+        app:layout_constraintBottom_toTopOf="@id/casa_botines"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/basilica_de_san_isidoro" />
+
+    <TextView
+        android:id="@+id/casa_botines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/casa_botines"
+        android:textColor="@color/uw_purple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/casa_botines_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/basilica_de_san_isidoro_address" />
+
+    <TextView
+        android:id="@+id/casa_botines_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uw_light_gold"
+        android:text="@string/casa_botines_address"
+        android:textColor="@color/uw_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/casa_botines" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,11 +4,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AboutLeonPage extends AppCompatActivity {
+import android.widget.TextView;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.about_leon_page);
-    }
+public class AboutLeonPage extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.about_leon_page);
+
+            TextView textView = (TextView) findViewById(R.id.about);
+            textView.setText("Welcome to the About page\n" +
+                    "This is the About Page.\n" +
+                    "     \tHighlights:\n" +
+                    "     \tArt History\n" +
+                    "           \t-Architecture\n" +
+                    "           \t-Catholic Art\n" +
+                    "     \tIntellectual History\n" +
+                    "           \t-Astronauts\n" +
+                    "           \t-Cyber Security Center\n" +
+                    "     \tContemporary\n" +
+                    "           \t-Bars and parties"); //set text for text view
+        }
 }
