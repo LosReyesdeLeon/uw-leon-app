@@ -94,6 +94,7 @@ public class NewsViewModel extends AndroidViewModel {
             for (int i = 0; i < arr.length(); i++) {
                 JSONObject obj = arr.getJSONObject(i);
                 NewsArticle newsArticle = new NewsArticle(Integer.parseInt(obj.getString(NewsArticle.ID)),
+                        obj.getString(NewsArticle.NAME),
                         obj.getString(NewsArticle.IMAGE),
                         obj.getString(NewsArticle.DATE),
                         obj.getString(NewsArticle.TEXT),
