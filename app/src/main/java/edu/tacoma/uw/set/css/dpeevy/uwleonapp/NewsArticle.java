@@ -1,11 +1,7 @@
 package edu.tacoma.uw.set.css.dpeevy.uwleonapp;
-
-import android.media.Image;
-
 import java.io.Serializable;
-import java.net.URL;
 
-public class News implements Serializable {
+public class NewsArticle implements Serializable {
 
     private int id;
     private String image, date, text, link;
@@ -16,7 +12,7 @@ public class News implements Serializable {
     public final static String TEXT = "text";
     public final static String LINK = "link";
 
-    public News(int id,String image,String date,String text,String link) {
+    public NewsArticle(int id, String image, String date, String text, String link) {
         this.id = id;
         this.image = image;
         this.date = date;

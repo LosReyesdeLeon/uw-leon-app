@@ -26,14 +26,14 @@ import com.android.volley.toolbox.Volley;
 public class NewsViewModel extends AndroidViewModel {
     private MutableLiveData<JSONObject> mResponse;
 
-    private MutableLiveData<List<News>> mNewsList;
+    private MutableLiveData<List<NewsArticle>> mNewsArticleList;
 
     public NewsViewModel(@NonNull Application application) {
         super(application);
         mResponse = new MutableLiveData<>();
         mResponse.setValue(new JSONObject());
-        mNewsList = new MutableLiveData<>();
-        mNewsList.setValue(new ArrayList<>());
+        mNewsArticleList = new MutableLiveData<>();
+        mNewsArticleList.setValue(new ArrayList<>());
     }
 
     public void addResponseObserver(@NonNull LifecycleOwner owner,
@@ -65,8 +65,8 @@ public class NewsViewModel extends AndroidViewModel {
     }
 
     public void addAnimalListObserver(@NonNull LifecycleOwner owner,
-                                      @NonNull Observer<? super List<News>> observer) {
-        mNewsList.observe(owner, observer);
+                                      @NonNull Observer<? super List<NewsArticle>> observer) {
+        mNewsArticleList.observe(owner, observer);
     }
 
     public void getNews() {
@@ -93,17 +93,17 @@ public class NewsViewModel extends AndroidViewModel {
             JSONArray arr = new JSONArray(data);
             for (int i = 0; i < arr.length(); i++) {
                 JSONObject obj = arr.getJSONObject(i);
-                News news = new News(Integer.parseInt(obj.getString(News.ID)),
-                        obj.getString(News.IMAGE),
-                        obj.getString(News.DATE),
-                        obj.getString(News.TEXT),
-                        obj.getString(News.LINK));
-                Objects.requireNonNull(mNewsList.getValue()).add(news);
+                NewsArticle newsArticle = new NewsArticle(Integer.parseInt(obj.getString(NewsArticle.ID)),
+                        obj.getString(NewsArticle.IMAGE),
+                        obj.getString(NewsArticle.DATE),
+                        obj.getString(NewsArticle.TEXT),
+                        obj.getString(NewsArticle.LINK));
+                Objects.requireNonNull(mNewsArticleList.getValue()).add(newsArticle);
             }
         } catch (JSONException e) {
             e.printStackTrace();
             Log.e("ERROR!", Objects.requireNonNull(e.getMessage()));
         }
-        mNewsList.setValue(mNewsList.getValue());
+        mNewsArticleList.setValue(mNewsArticleList.getValue());
     }
 }

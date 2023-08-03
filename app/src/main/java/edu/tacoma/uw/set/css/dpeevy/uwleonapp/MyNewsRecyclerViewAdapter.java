@@ -12,10 +12,10 @@ import java.util.List;
 public class MyNewsRecyclerViewAdapter extends RecyclerView.Adapter<MyNewsRecyclerViewAdapter.ViewHolder> {
 
 
-    private final List<News> mValues;
-    public MyNewsRecyclerViewAdapter(List<News
-            > newsList) {
-        mValues = newsList;
+    private final List<NewsArticle> mValues;
+    public MyNewsRecyclerViewAdapter(List<NewsArticle
+            > newsArticleList) {
+        mValues = newsArticleList;
     }
     @NonNull
     @Override
@@ -37,13 +37,13 @@ public class MyNewsRecyclerViewAdapter extends RecyclerView.Adapter<MyNewsRecycl
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
         //public FragmentNewsBinding binding;
-        public edu.tacoma.uw.set.css.dpeevy.uwleonapp.News mItem;
+        public NewsArticle mItem;
         public ViewHolder(View view) {
             super(view);
             mView = view;
             //binding = FragmentNewsBinding.bind(view);
         }
-        public void setItem(final News item) {
+        public void setItem(final NewsArticle item) {
 //            mItem = item;
 //            binding.itemId.setText(new Integer(item.getId()).toString());
 //            binding.content.setText(item.getName());
