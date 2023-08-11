@@ -23,6 +23,9 @@ public class HomePage extends AppCompatActivity {
 
         b = findViewById(R.id.navigation_button);
         setButtonListener(b, NavigationPage.class);
+
+//        b = findViewById(R.id.newsButton);
+//        setButtonListener(b,News.class);
     }
 
     private void setButtonListener(Button button, Class<?> cls) {

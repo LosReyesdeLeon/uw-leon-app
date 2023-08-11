@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.UWLeonApp" parent="Base.Theme.UWLeonApp" />
+    <style name="Theme.UWLeonApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.UWLeonApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.UWLeonApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
