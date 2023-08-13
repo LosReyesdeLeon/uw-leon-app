@@ -1,40 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePage">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
         android:text="@string/home_page_greeting"
-        app:layout_constraintBottom_toTopOf="@id/about_button"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <Button
-        android:id="@+id/about_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/about_leon_button_text"
-        app:layout_constraintBottom_toTopOf="@id/navigation_button"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageButton
+        android:id="@+id/homepage_testimonial_button"
+        android:layout_width="113dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="-200dp"
+        android:contentDescription="@+strings/testimonials_content_description"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/greeting" />
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
+        app:srcCompat="@drawable/ic_testimonial_black_24dp" />
 
-    <Button
-        android:id="@+id/navigation_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/navigation_button_text"
+    <ImageButton
+        android:id="@+id/homepage_preflight_button"
+        android:layout_width="108dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-260dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@+strings/preflight_content_description"
+        app:layout_constraintBottom_toTopOf="@+id/homepage_scholarships_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/homepage_testimonial_button"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
+        app:srcCompat="@drawable/ic_preflight_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/homepage_news_button"
+        android:layout_width="111dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="236dp"
+        android:contentDescription="@+strings/news_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homepage_scholarships_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homepage_testimonial_button"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_newspaper_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/homepage_scholarships_button"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="233dp"
+        android:contentDescription="@+strings/scholarships_content_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/about_button" />
+        app:layout_constraintStart_toEndOf="@+id/homepage_news_button"
+        app:layout_constraintTop_toBottomOf="@+id/homepage_preflight_button"
+        app:srcCompat="@drawable/ic_scholarship_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Testimonials"
+        app:layout_constraintStart_toStartOf="@+id/homepage_testimonial_button"
+        app:layout_constraintTop_toBottomOf="@+id/homepage_testimonial_button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pre-flight"
+        app:layout_constraintTop_toBottomOf="@+id/homepage_preflight_button"
+        app:layout_constraintStart_toStartOf="@+id/homepage_preflight_button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News"
+        app:layout_constraintTop_toBottomOf="@+id/homepage_news_button"
+        app:layout_constraintStart_toStartOf="@+id/homepage_news_button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scholarships"
+        app:layout_constraintTop_toBottomOf="@+id/homepage_scholarships_button"
+        app:layout_constraintStart_toStartOf="@+id/homepage_scholarships_button" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

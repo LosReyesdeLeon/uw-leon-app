@@ -18,20 +18,20 @@ public class HomePage extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Button b = findViewById(R.id.about_button);
-        setButtonListener(b, AboutLeonPage.class);
-
-        b = findViewById(R.id.navigation_button);
-        setButtonListener(b, NavigationPage.class);
+//        Button b = findViewById(R.id.about_button);
+//        setButtonListener(b, AboutLeonPage.class);
+//
+//        b = findViewById(R.id.navigation_button);
+//        setButtonListener(b, NavigationPage.class);
     }
 
-    private void setButtonListener(Button button, Class<?> cls) {
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), cls);
-                startActivity(i);
-            }
-        });
-    }
+//    private void setButtonListener(Button button, Class<?> cls) {
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = new Intent(getApplicationContext(), cls);
+//                startActivity(i);
+//            }
+//        });
+//    }
 }
