@@ -3,6 +3,7 @@ package edu.tacoma.uw.set.css.dpeevy.uwleonapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 import android.widget.TextView;
 
 public class AboutLeonPage extends AppCompatActivity {
